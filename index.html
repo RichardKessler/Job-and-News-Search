@@ -32,10 +32,10 @@
             <span class="card-title">Resume Upload</span>
             <p>We have a huge database of employers who are looking for perfect candidates. <br> Resumé is the best way to introduce yourself in the job market.</p> <br>
 
-            <a href="file:///C:\Programs\"><button class="btn waves-effect waves-light searchButton" type="submit" name="action"> Upload Resumé </button> </a>
+            <!-- <a href="file:///C:\Programs\"><button class="btn waves-effect waves-light searchButton" type="submit" name="action"> Upload Resumé </button> </a> -->
           </div>
           <div class="card-action">
-            <button class="btn waves-effect waves-light searchButton" type="submit" name="action">Submit </button>
+            <a href="file:///C:\Programs\"><button class="btn waves-effect waves-light searchButton" type="submit" name="action"> Upload Resumé </button> </a>
 
           </div>
         </div>
@@ -44,19 +44,27 @@
       </div> <!-- .mainContentColumn-1-1 ends -->
       <div class="col s6 m9 mainContentColumn-1-2">
         <div class="card white darken-1 z-depth-3 card-2">
-          <div class="card-content dark-text">
+          <form class="card-content dark-text">
             <span class="card-title">Find Job</span>
-            <p>We have a huge database of employers who are looking for perfect candidates. There are many jobs available in the market. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem omnis ullam est obcaecati ab voluptatum. </p>
             <p> Fill out required information below to find a matching job. </p>
+<div class="row">
+              <form class="col s12">
+                <div class="input-field col s6">
+                    <input id="searchKey" type="text" class="validate">
+                    <label for="searchKey">Job Title or Keyword</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="searchLocation" type="text" class="validate">
+                    <label for="searchLocation">City, State or ZIP Code</label>
+                  </div>
+                  <button class="btn waves-effect waves-light searchButton" type="submit" name="action">Search
+                    <i class="material-icons right">search</i>
+                  </button>
+                </form>
+</div>
           </div>
-          <div class="card-action">
-            <!-- <a href="#">This is a link</a> -->
-            <button class="btn waves-effect waves-light searchButton" type="submit" name="action">Search
-              <i class="material-icons right">search</i>
-            </button>
-
-          </div>
-        </div>
+                 </div>
         <!--.card-2 ends -->
 
 

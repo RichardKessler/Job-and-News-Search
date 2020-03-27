@@ -18,7 +18,8 @@
 }
 .headerRow {
   padding-top: 5rem;
-  background-color: rgb(49, 153, 214, .4);
+  background-color: rgb(49, 153, 214, .3);
+  /* background-color: rgba(255, 255, 255, .4); */
 }
 .headerColumn-1 h1{
    text-shadow: 2px 2px 4px #000000;
@@ -41,3 +42,8 @@ text-shadow: 2px 2px 4px #000000;
   margin-right: 2rem;
   
 }
+/* form p {
+  margin-top: 50px;
+  color: red;
+
+} */
