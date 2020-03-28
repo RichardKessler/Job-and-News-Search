@@ -1,16 +1,21 @@
+body {
+  background-color:  #e9e9e9;
+}
 #mainWrapper {
-  text-align: center;
-  background-image: url("web-dev-desk-overlay-lighter.jpg");
+  background-color:  #fcfdfd;
+  /* background-image: url("web-dev-desk-overlay-lighter.jpg");
   background-repeat: no-repeat;
-  position: fixed; 
+  position: fixed;  */
+  text-align: center;
   width: 100%; 
-  height: 100%; 
+  height: auto; 
   max-width: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   padding: 3rem;
+  margin-bottom: 3rem;
 }
 .searchButton{
   background-color: #448f99;
@@ -42,8 +47,12 @@ text-shadow: 2px 2px 4px #000000;
   margin-right: 2rem;
   
 }
-/* form p {
-  margin-top: 50px;
-  color: red;
-
-} */
+.mainContentRow-1, .mainContentRow-2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.footerRow {
+  background-color: #4a90c9;
+  padding: 2rem;
+  color: white;
+}
