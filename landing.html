@@ -7,89 +7,55 @@
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Job Finder</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/landing-styles.css">
+  <title>Job Search & Article Finder</title>
 </head>
 
 <body>
   <div class="container mainWrapper" id="mainWrapper">
-    <div class="row section headerRow">
-      <div class="col s12 headerColumn-1 z-depth-3">
-        <h1 class="white-text"> <i class="material-icons update medium" id="logoIcon">update</i> Job Finder </h1>
-        <p> <em>daily-updated easy-to-use one-stop job finder resource </em></p>
-
-
-
+    <div class="row  headerRow">
+      <div class="col s12 headerColumn-1">
+      <i class="material-icons update medium center-align" id="logoIcon">update</i>  
+      <h1 class="white-text center-align">  Job Search & Article Finder </h1>
+        <p class="center-align"> <em>daily-updated easy-to-use one-stop job searching and articles searching resource </em></p>
       </div> <!-- .headerColumn-1 ends -->
+      <div class="col s12 formWrapper">
+        <form class="col s12 formField">
+          <div class="row">
+            <p class="center-align formHeader"> Enter your name and click the button below to find and search jobs and articles. </p>
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+              First Name: 
+              <label for="first_name" class="inputTexts">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              Last Name: 
+                           <label for="last_name" class="inputTexts">Last Name</label>
+            </div>
+            <button class="btn waves-effect waves-light" id="landingButton" type="submit" name="action">Submit
+            </button>
+                   
+          </div>
+        </form>
+          
+        
+        </div> <!-- .formWrapper ends -->
     </div> <!-- .headerRow ends -->
-    <div class="divider"> </div> <!-- This div creates 1px horizontal line which is used as a section divider -->
-    <div class="row section mainContentRow-1">
-      <div class="col s6 m3 mainContentColumn-1-1">
-        <!-- ############# Card section ############## -->
-        <div class="card white darken-1 z-depth-3 card-1">
-          <div class="card-content dark-text">
-            <span class="card-title">Resume Upload</span>
-            <p>We have a huge database of employers who are looking for perfect candidates. <br> Resumé is the best way to introduce yourself in the job market.</p> <br>
-
-            <!-- <a href="file:///C:\Programs\"><button class="btn waves-effect waves-light searchButton" type="submit" name="action"> Upload Resumé </button> </a> -->
-          </div>
-          <div class="card-action">
-            <a href="file:///C:\Programs\"><button class="btn waves-effect waves-light searchButton" type="submit" name="action"> Upload Resumé </button> </a>
-
-          </div>
-        </div>
-        <!--.card-1 ends -->
-
-      </div> <!-- .mainContentColumn-1-1 ends -->
-      <div class="col s6 m9 mainContentColumn-1-2">
-        <div class="card white darken-1 z-depth-3 card-2">
-          <form class="card-content dark-text">
-            <span class="card-title">Find Job</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem omnis ullam est obcaecati ab voluptatum. </p>
-            <p> Fill out required information below to find a matching job. </p>
-<div class="row">
-              <form class="col s12">
-                <div class="input-field col s6">
-                    <input id="searchKey" type="text" class="validate">
-                    <label for="searchKey">Job Title or Keyword</label>
-                  </div>
-                  <div class="input-field col s6">
-                    <input id="searchLocation" type="text" class="validate">
-                    <label for="searchLocation">City, State or ZIP Code</label>
-                  </div>
-                  <button class="btn waves-effect waves-light searchButton" type="submit" name="action">Search
-                    <i class="material-icons right">search</i>
-                  </button>
-                </form>
-</div>
-          </div>
-                 </div>
-        <!--.card-2 ends -->
-
-
-      </div> <!-- .mainContentColumn-1-2 ends -->
-    </div> <!-- .mainContentRow-1 ends -->
-    <div class="divider"> </div> <!-- section divider -->
-    <div class="row section mainContentRow-2">
-      <div class="col s6 mainContentColumn-1-1">
-      </div> <!-- .mainContentColumn-2-1 ends -->
-      <div class="col s6 mainContentColumn-1-2">
-
-
-      </div> <!-- .mainContentColumn-2-2 ends -->
-    </div> <!-- .mainContentRow-2 ends -->
-    <div class="divider"> </div> <!-- section divider -->
-    <div class="row section footerRow">
-      <div class="col s12 footerColumn-1">footerColumn-1</div> <!-- .footerColumn-1 ends -->
-      <!--  <div class="col s12 footerColumn-2">footerColumn-2</div>  .footerColumn-2 ends -->
-    </div> <!-- .footerRow ends -->
-
+   
+    
   </div> <!-- .mainWrapper ends -->
 
   <!--JavaScript at end of body for optimized loading-->
   <!--Import materialize.css-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.
+  js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="scripts/script.js"></script>
 
 </body>
 
