@@ -75,7 +75,9 @@
     background-color: #448f99;
     border-radius: 20px;
    }
- 
+ .tabColumn {
+     margin-top: 2rem;
+ }
 .tablink {
     background-color: #d9eef3;
     color: #3c5c6b;

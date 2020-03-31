@@ -1,8 +1,8 @@
 html {
   background: url(/assets/images/workplace-optimized-1.jpg) no-repeat center center fixed;
   background-size: cover;
-  height: 100%;
-  overflow: hidden;
+  height: 100vh;
+  /* overflow: hidden; */
 }
 #mainWrapper {
   display: flex;
@@ -24,7 +24,7 @@ html {
 
 }
 .formHeader {
-  padding: 2rem 0 1rem 0;
+  padding: 2rem;
  font-size: 1.2rem;
 }
 #landingButton {
@@ -33,4 +33,13 @@ html {
 }
 ::placeholder {
   color: #bb2113;
+  }
+  .landingFooter {
+    background-color: rgb(65, 65, 65, .8);
+    padding: 3rem;
+  }
+  .landingFooter p{
+   padding: 3rem;
+   color: #b2c7c1;
+   font-size: .9rem;
   }
