@@ -9,112 +9,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css styles/reset.css">
     <link rel="stylesheet" href="./assets/css styles/new-style.css">
+    <link rel="stylesheet" href="./assets/css styles/style.css">
     <title>Job Search & Article Finder</title>
 </head>
 
 <body>
     <div class="container mainWrapper" id="mainWrapper">
         <div class="row section headerRow">
-            <div class="col s12 headerColumn-1 z-depth-3">
-                <h2 class="white-text center-align"> <i class="material-icons update medium center-align" id="logoIcon">update</i>Job Search & Article Finder </h2>
+            <div class="col s12 headerColumn-1">
+                <i class="material-icons update medium center-align" id="logoIcon">update</i>
+                <h2 class="white-text center-align"> Job Search & Article Finder </h2>
                 <p class="center-align"> <em>daily-updated easy-to-use one-stop job finder resource </em></p>
-
             </div>
             <!-- .headerColumn-1 ends -->
         </div>
         <!-- .headerRow ends -->
         <!-- $$$$$$$$$$$$ MAIN CONTENT ROW-1 $$$$$$$$$$$$ -->
         <div class="row section mainContentRow-1">
-            <div class="col s12 m4 mainContentColumn-1-1">
-                <h5>Who we are?</h5>
-                <p>This is just a placeholder. Daily-updated easy-to-use one-stop job finder resource. </p>
-                <p> We have a huge database of employers that are looking for perfect candidate for their jobs. Resumé is the best way to introduce yours</p>
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi natus praesentium inventore quaerat ex, sequi nostrum eaque, molestias esse exercitationem minima deserunt nihil ut reiciendis iste itaque voluptatibus similique.</p>
+            <div class="col s12 l5 mainContentColumn-1-1">
 
-            </div>
-            <!-- .mainContentColumn-1-1 ends -->
-            <div class="col s12 m8 mainContentColumn-1-2">
-                <h5>Find Job</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem omnis ullam est obcaecati ab voluptatum. </p>
-                <p> Fill out required information below to find a matching job. </p>
-                <div class="row center-align ">
-                    <form class="col s12">
-                        <div class="input-field col s6">
-                            <input id="searchKey" type="text" class="validate">
-                            <label for="searchKey">Job Title or Keyword</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <input id="searchLocation" type="text" class="validate">
-                            <label for="searchLocation">City, State or ZIP Code</label>
-                        </div>
-                        <button class="btn waves-effect waves-light searchButton" type="submit" name="action">Search
-                  <i class="material-icons right">search</i>
-                </button>
-                    </form>
-                    <div class="col center-align" id="searchedJobList"> <a href="#" class="blue-text text-darken-2"> Click here to review your job search history </a>
-                        <p> *** Note to developer: Placeholder box. Transparent or invisible to users. <br> Dynamically updated data go here. Delete these texts. </p>
+                <h5>Job Searched Result</h5>
+                <p>Note to Developers: Placeholder Texts: <br> Trimmed version displays here, click to details page.</p>
+                <!-- ########## Trimmed Version of Job Search Result List Section ########## -->
+                <ul class="collection">
+                    <li class="collection-item avatar" id="trimmedList">
+                        <i class="material-icons circle blue">folder</i>
+                        <p class="trimmedLine left-align" id="jobTitle">Job Title: </p>
+                        <p class="trimmedLine left-align" id="jobCategory">Category: </p>
+                        <p class="trimmedLine left-align" id="jobLocation"> Location: </p>
+                        <a href="#!" class="secondary-content">
+                            <i class="material-icons">chevron_right</i></a>
+                    </li>
 
-                    </div>
+                    <li class="collection-item avatar" id="trimmedList">
+                        <i class="material-icons circle blue">folder</i>
+                        <p class="trimmedLine left-align" id="jobTitle">Job Title: </p>
+                        <p class="trimmedLine left-align" id="jobCategory">Category: </p>
+                        <p class="trimmedLine left-align" id="jobLocation"> Location: </p>
+                        <a href="#!" class="secondary-content">
+                            <i class="material-icons">chevron_right</i></a>
+                    </li>
 
-                </div>
+                    <li class="collection-item avatar" id="trimmedList">
+                        <i class="material-icons circle blue">folder</i>
+                        <p class="trimmedLine left-align" id="jobTitle">Job Title: </p>
+                        <p class="trimmedLine left-align" id="jobCategory">Category: </p>
+                        <p class="trimmedLine left-align" id="jobLocation"> Location: </p>
+                        <a href="#!" class="secondary-content">
+                            <i class="material-icons">chevron_right</i></a>
+                    </li>
+                    <li class="collection-item avatar" id="trimmedList">
+                        <i class="material-icons circle blue">folder</i>
+                        <p class="trimmedLine left-align" id="jobTitle">Job Title: </p>
+                        <p class="trimmedLine left-align" id="jobCategory">Category: </p>
+                        <p class="trimmedLine left-align" id="jobLocation"> Location: </p>
+                        <a href="#!" class="secondary-content">
+                            <i class="material-icons">chevron_right</i></a>
+                    </li>
+                </ul>
+                <!-- Job Search Result List Ends -->
+            </div> <!-- .mainContentColumn-1-1 ends -->
+            <div class="col s12 l7  mainContentColumn-1-2">
+                <h5>Newsletter Search Result</h5>
+                <p>Note to Developers: Placeholder Texts: <br> The newsletter searched result will be displayed in the collapsible panel below. </p>
+                <!-- This collapsible panel should work with the javascript code below. -->
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">reorder</i>Previous News Articles</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li class="active">
+                        <div class="collapsible-header"><i class="material-icons">reorder</i>Recent News Article</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">reorder</i>Saved News Articles</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                </ul>
+
+                <!-- ###################################  -->
 
             </div>
             <!-- .mainContentColumn-1-2 -->
         </div>
         <!-- .mainContentRow-1 ends -->
 
+         <!-- $$$$$$$$$$$$ MAIN CONTENT TAB ROW $$$$$$$$$$$$ -->
+         <div class="row tabRow">
+             <div class="col s12 tabColumn">
+                <button class="tablink" onclick="showContent('jobTab', this, '#efe9cc')" id="defaultOpen">Jobs</button>
+                <button class="tablink" onclick="showContent('articleTab', this, '#eadea6')">Articles</button>
+         <div id="jobTab" class="tabcontent">
+            <h5>Job Title => Delete this header if dynamically updating </h5>
+            <p> => Delete this paragraph if dynamically updating </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident temporibus, commodi minima, iste ipsam eaque odio tempora voluptate neque obcaecati modi quam incidunt repellendus nisi quos natus totam quo sed. </p>
+          </div>
+          
+          <div id="articleTab" class="tabcontent">
+            <h5>Article Title => Delete this header if dynamically updating </h5>
+            <p> => Delete this paragraph if dynamically updating </p>
+            <p> Provident temporibus, commodi minima, iste ipsam eaque odio tempora voluptate neque obcaecati modi quam incidunt repellendus nisi quos natus totam quo sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        
+</div> <!-- .tabColumn ends -->
+
+         </div> <!-- .tabRow ends -->
+
         <!-- $$$$$$$$$$$$ MAIN CONTENT ROW-2 $$$$$$$$$$$$ -->
         <div class="row section mainContentRow-2">
-            <div class="col s12 m4 mainContentColumn-2-1">
+            <div class="col s12 mainContentColumn-2-1">
                 <div class="card white darken-1 z-depth-3 card-2-1">
                     <div class="card-content dark-text">
-                        <span class="card-title">Upload Resumé  </span>
-                        <p>We have a huge database of employers that are looking for perfect candidate for their jobs. Resumé is the best way to introduce yourself in the job market. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-
-                    </div>
-                    <div class="card-action center-align">
-                        <a href=""><button class="btn waves-effect waves-light resumeUploadButton" id="resumeUploadButton" type="submit" name="action"> Search Newspaper Articles </button> </a>
+                        <span class="card-title center-align">This section can be used for information if needed. </span>
+                        <p class="center-align">We have a huge database of employers that are looking for perfect candidate for their jobs. Resumé is the best way to introduce yourself in the job market. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
                 </div>
-                <!--.card-2-1 ends -->
-            </div>
-            <!-- .mainContentColumn-2-1 ends -->
-
-
-            <div class="col s12 m4 mainContentColumn-2-2">
-                <div class="card white darken-1 z-depth-3 card-2-2">
-                    <div class="card-content dark-text">
-                        <span class="card-title">Search articles </span>
-                        <p>The searched article lists will populate here. <br> This is just a placeholder. </p>
-                        <p>The searched article lists will populate here. <br> This is just a placeholder. </p>
-                    </div>
-                    <div class="card-action center-align ">
-                        <a href=""><button class="btn waves-effect waves-light articleSearchButton" id="articleSearchButton" type="submit" name="action"> Search Newspaper Articles </button> </a>
-                    </div>
-                </div>
-                <!--.card-2-2 ends -->
-
-            </div>
-            <!-- .mainContentColumn-2-2 ends -->
-            <div class="col s12 m4 mainContentColumn-2-3">
-                <div class="card white darken-1 z-depth-3 card-2-3">
-                    <div class="card-content dark-text">
-                        <span class="card-title">Saved searched articles </span>
-                        <p>Saved articles' url listing here. <br> Saved articles' url listing here.</p>
-
-                        <p>May need to use accordion. <br> Trimmed part of each article goes here.</p>
-
-                    </div>
-                    <div class="card-action center-align">
-                        <a href=""><button class="btn waves-effect waves-light articleSavedButton" id="articleSavedButton" type="submit" name="action"> View searched article list summary </button> </a>
-
-                    </div>
-                </div>
-                <!--.card-2-3 ends -->
-            </div>
-            <!-- .mainContentColumn-2-3 ends -->
-        </div>
-        <!-- .mainContentRow-2 ends -->
+            </div> <!-- .mainContentColumn-2-1 ends -->
+        
+        </div>       <!-- .mainContentRow-2 ends -->
 
         <!-- $$$$$$$$$$$$ FOOTER CONTENT $$$$$$$$$$$$ -->
         <div class="row section footerRow">
@@ -126,15 +139,14 @@
         <!-- .footerRow ends -->
     </div>
     <!-- .mainWrapper ends -->
+
     <!--JavaScript at end of body for optimized loading-->
     <!--Import materialize.css-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.
-  js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="jquery-3.4.1.min.js"></script>
     <script src="./assets/javascripts/script.js"></script>
-
 
 </body>
 

@@ -7,9 +7,10 @@
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css styles/reset.css">
-    <link rel="stylesheet" href="./assets/css styles/style.css">
-    <link rel="stylesheet" href="./assets/css styles/landing-styles.css">
+    <link rel="stylesheet" href="../assets/css styles/reset.css">
+    <link rel="stylesheet" href="../assets/css styles/style.css">
+    <link rel="stylesheet" href="../assets/css styles/new-style.css">
+    <link rel="stylesheet" href="../assets/css styles/landing-styles.css">
     <title>Job Search & Article Finder</title>
 </head>
 
@@ -18,24 +19,21 @@
         <div class="row  headerRow">
             <div class="col s12 headerColumn-1">
                 <i class="material-icons update medium center-align" id="logoIcon">update</i>
-                <h1 class="white-text center-align"> Job Search & Article Finder </h1>
+                <h2 class="white-text center-align"> Job Search & Article Finder </h2>
                 <p class="center-align"> <em>daily-updated easy-to-use one-stop job searching and articles searching resource </em></p>
             </div>
             <!-- .headerColumn-1 ends -->
             <div class="col s12 formWrapper">
                 <form class="col s12 formField">
                     <div class="row">
-                        <p class="center-align formHeader"> Enter your name and click the button below to find and search jobs and articles. </p>
-                        <div class="input-field col s6">
-                            <input placeholder="Placeholder" id="first_name" type="text" class="validate"> First Name:
-                            <label for="first_name" class="inputTexts">First Name</label>
+                        <p class="center-align formHeader"> Looking to search your dream job or wanted to archive favorite newspaper articles?
+                            <br> Enter your search term keywords in the field below and click search button to find jobs or articles. </p>
+                        <div class="input-field col s12">
+                            <input placeholder="Enter a word, phrase or keywords here" id="searchField" type="text" class="validate center-align">
+                            <label for="searchField" class="inputTexts"></label>
                         </div>
-                        <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate"> Last Name:
-                            <label for="last_name" class="inputTexts">Last Name</label>
-                        </div>
-                        <button class="btn waves-effect waves-light" id="landingButton" type="submit" name="action">Submit
-            </button>
+                        <button class="btn waves-effect waves-light" id="landingButton" type="submit" name="action">Search
+                        </button>
 
                     </div>
                 </form>
