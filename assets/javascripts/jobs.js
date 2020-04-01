@@ -1,13 +1,14 @@
 $(document).ready(function () {
-
-    $("#findNow").click(function jobAPI(e, page) {
+    var page=1;
+    
+    $("#findNow").on('click', function jobAPI(e) {
         e.preventDefault();
 
         var APIkey = "d06b0526f3dd2c32f58a1ae2727794e5"
         var APPid = "6c9cf9f3"
         var userSearch = $("#searchTerm").val();
         var userLocation = $("#searchPlace").val();
-        var page=1;
+        
         var totalPages=0;
         var queryURL = 'https://api.adzuna.com/v1/api/jobs/us/search/'+page+'?app_id=6c9cf9f3&app_key=d06b0526f3dd2c32f58a1ae2727794e5' + '&what=' + userSearch + '&where=' + userLocation
 
@@ -52,12 +53,14 @@ $(document).ready(function () {
         $('.jobResults').on('click', '#previous', function(){
             if(page>1){
                 page--;
+                $("#findNow").click()
             }
         })
         //next page
         $('.jobResults').on('click', '#next', function(){
             if(page<totalPages){
                 page++;
+                $("#findNow").click()
 
             }
             console.log("jobAPI -> page", page)
