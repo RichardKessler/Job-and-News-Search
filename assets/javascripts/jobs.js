@@ -44,7 +44,6 @@ $(document).ready(function () {
             $('.jobResults').append('<button id="previous">previous</button> <button id="next">next</button>')
             console.log("JOB SEARCH API ************",response);
             
-            
         })
 
         //TO DO: figure out how to properly call the API function again on new page

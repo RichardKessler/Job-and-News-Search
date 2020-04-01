@@ -4,7 +4,7 @@ $("#findNow").click(function(event) {
     var searchTerm = $("#searchTerm").val();
     var url1 = 'http://newsapi.org/v2/everything?' + 'qInTitle=' + searchTerm + '&' + 'sortBy=relevancy&language=en&pageSize=10&apiKey=645a8c4dfc5044a0845c6033b3728a59';
 
-
+    var toggle = true;
 
     $.get(url1, function(response) {
         console.log("NEWS SEARCH API ****************",response);
@@ -23,8 +23,10 @@ $("#findNow").click(function(event) {
             $(".newsResults").append(newsCard);
         }
     })
+    $('.newsResults').toggle();
 });
 
 $(":checkbox").click(function() {
-    $('.newsResults').toggle();
+        $('.newsResults').toggle();
+        $('.jobResults').toggle();
 })
