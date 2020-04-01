@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/materialize/css/materialize.css">
+    <link rel="stylesheet" href="./assets/css styles/resultStyle.css">
     <title>Document</title>
 </head>
 
@@ -23,9 +25,24 @@
                         <input placeholder="Placeholder" id="searchPlace" type="text" class="validate" value="Raleigh, NC">
                         <label for="search_place">City</label>
                     </div>
-                    <div><button id="findNow" class="btn waves-effect waves-light" type="submit" name="action">Search
+                    <div class="row">
+                        <div class="col s6">
+                            <div><button id="findNow" class="btn waves-effect waves-light" type="submit" name="action">Search
                       <i class="material-icons right">Now</i>
                     </button></div>
+                        </div>
+
+                        <div class="col s6">
+                            <div class="switch">
+                                <label>
+                        Jobs
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        News
+                      </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
