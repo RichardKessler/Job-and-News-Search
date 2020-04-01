@@ -7,7 +7,7 @@ $("#findNow").click(function(event) {
 
 
     $.get(url1, function(response) {
-        console.log(response);
+        console.log("NEWS SEARCH API ****************",response);
         $(".newsResults").empty();
         for (let i = 0; i < response.articles.length; i++) {
             var newsCard = $('<div class="card-panel">');
