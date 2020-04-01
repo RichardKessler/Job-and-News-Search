@@ -20,20 +20,29 @@ html {
   background-color: rgb(65, 65, 65, .6);
   }
 .formWrapper {
-  background-color: rgba(255, 255, 255, .6)
+  /* background-color: rgba(255, 255, 255, .6) */
+  background-color: rgba(18, 112, 149, 0.6);
 
 }
 .formHeader {
-  padding: 2rem;
+  padding: 4rem;
  font-size: 1.2rem;
+ color: #fff;
 }
+
+::placeholder {
+  color: #6cf3d6;
+  }
+
 #landingButton {
   border-radius: 15px;
   margin-bottom: 5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  box-shadow: 6px 10px 20px #033447;
+
 }
-::placeholder {
-  color: #bb2113;
-  }
+
   .landingFooter {
     background-color: rgb(65, 65, 65, .8);
     padding: 3rem;
