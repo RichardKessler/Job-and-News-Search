@@ -19,7 +19,12 @@ $("#findNow").click(function(event) {
             newsCard.append('<h6>' + response.articles[i].description);
             newsCard.append('<h6>' + response.articles[i].content);
 
+
             $(".newsResults").append(newsCard);
         }
     })
 });
+
+$(":checkbox").click(function() {
+    $('.newsResults').toggle();
+})
