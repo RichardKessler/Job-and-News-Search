@@ -7,7 +7,7 @@ $("#findNow").click(function(event) {
     var toggle = true;
 
     $.get(url1, function(response) {
-        console.log("NEWS SEARCH API ****************",response);
+        console.log("NEWS SEARCH API ****************", response);
         $(".newsResults").empty();
         for (let i = 0; i < response.articles.length; i++) {
             var newsCard = $('<div class="card-panel">');
@@ -27,6 +27,6 @@ $("#findNow").click(function(event) {
 });
 
 $(":checkbox").click(function() {
-        $('.newsResults').toggle();
-        $('.jobResults').toggle();
+    $('.newsResults').toggle();
+    $('.jobResults').toggle();
 })
