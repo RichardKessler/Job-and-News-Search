@@ -1,55 +1,53 @@
 #mainWrapper {
-    background-color: #FFF;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    max-width: 100%;
-    /* padding: 3rem; */
-    margin: 0 auto;
-    margin-bottom: 3rem;
+	background-color: #fff;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	max-width: 100%;
+	/* padding: 3rem; */
+	margin: 0 auto;
+	margin-bottom: 3rem;
 }
-
 
 .headerRow {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-     
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 .headerColumn-1 {
-    background-color: #414141;
-    padding: 0 2rem;
+	background-color: #414141;
+	padding: 0 2rem;
 }
 
 .headerColumn-1 h2 {
-    text-shadow: 2px 2px 4px #000000;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-top: 1.5rem;
-    font-size:5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
+	text-shadow: 2px 2px 4px #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 1.5rem;
+	font-size: 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2rem;
 }
 
 .headerColumn-1 p {
-       font-size: 1.1rem;
-    color: #f5f8cb;
-    text-shadow: 2px 2px 4px #000000;
-    padding: 0 3rem;
-    padding-bottom: 5rem;
+	font-size: 1.1rem;
+	color: #f5f8cb;
+	text-shadow: 2px 2px 4px #000000;
+	padding: 0 3rem;
+	padding-bottom: 5rem;
 }
 
 #logoIcon {
-    color: #d0e7e1;
-  margin-top: 2rem;
-  text-shadow: 5px 5px 10px #000000;
+	color: #d0e7e1;
+	margin-top: 2rem;
+	text-shadow: 5px 5px 10px #000000;
 }
 
 .mainContentRow-1,
 .mainContentRow-2 {
-    margin-top: 1rem;
+	margin-top: 1rem;
 	margin-bottom: 0;
 	padding-bottom: 0;
 	background-color: white;
@@ -61,7 +59,7 @@
 .mainContentColumn-1-1 {
 	margin: 0;
 	padding: 0 3rem !important;
-	}
+}
 .mainContentColumn-1-1 p {
 	margin-bottom: 2rem;
 }
@@ -72,37 +70,40 @@
 }
 
 .searchButton {
-    background-color: #448f99;
-    border-radius: 20px;
-   }
- .tabColumn {
-     margin-top: 2rem;
- }
+	background-color: #448f99;
+	border-radius: 20px;
+}
+.tabColumn {
+	margin-top: 2rem;
+}
 .tablink {
-    background-color: #d9eef3;
-    color: #3c5c6b;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 50%;
-  }
-  
-  .tablink:hover {
-      background-color: #777;
-      color: #fff;
-  }
-  
-  .tabcontent {
-    color: #333;
-    display: none;
-    padding: 50px;
-      text-align: center;
-      margin-top: 20px;
-  }
-  #jobTab, #articleTab {background-color:#f8f6f6;}
+	background-color: #d9eef3;
+	color: #3c5c6b;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 50%;
+}
+
+.tablink:hover {
+	background-color: #777;
+	color: #fff;
+}
+
+.tabcontent {
+	color: #333;
+	display: none;
+	padding: 50px;
+	text-align: center;
+	margin-top: 20px;
+}
+#jobTab,
+#articleTab {
+	background-color: #f8f6f6;
+}
 .card-title {
 	color: #e28560;
 }
@@ -111,7 +112,29 @@
 }
 
 .footerRow {
-    background-color: #414141;
-    padding: 2rem;
-    color: white;
+	background-color: #414141;
+	padding: 2rem;
+	color: white;
+}
+
+#jobSaveButton,
+#articleSaveButton {
+	margin: 2rem auto;
+	padding: 1rem;
+	width: 100%;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	background-color: #c8e2e2;
+	cursor: pointer;
+}
+#jobSaveButton:hover,
+#articleSaveButton:hover {
+	background-color: #c3c3c3;
+	color: #fff;
+}
+
+.jobBox,
+.articleBox {
+	padding: 2rem;
+	margin-bottom: 3rem;
 }
