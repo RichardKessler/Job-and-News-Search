@@ -1,14 +1,14 @@
-$("#findNow").click(function(event) {
+$(document).click(function (event) {
     event.preventDefault();
 
-    var searchTerm = $("#searchTerm").val();
+    var searchTerm = 'javascript'//$("#searchTerm").val();
     var url1 = 'http://newsapi.org/v2/everything?' + 'qInTitle=' + searchTerm + '&' + 'sortBy=relevancy&language=en&pageSize=10&apiKey=645a8c4dfc5044a0845c6033b3728a59';
 
     var toggle = true;
 
-    $.get(url1, function(response) {
-        console.log("NEWS SEARCH API ****************",response);
-        $(".newsResults").empty();
+    $.get(url1, function (response) {
+        console.log("NEWS SEARCH API ****************", response);
+        $("#articleTab").empty();
         for (let i = 0; i < response.articles.length; i++) {
             var newsCard = $('<div class="card-panel">');
             newsCard.append('<h5><a href = "' + response.articles[i].url + '" target="_blank">' + response.articles[i].title + '</a></h5>');
@@ -20,13 +20,13 @@ $("#findNow").click(function(event) {
             newsCard.append('<h6>' + response.articles[i].content);
 
 
-            $(".newsResults").append(newsCard);
+            $("#articleTab").append(newsCard);
         }
     })
-    $('.newsResults').toggle();
+    $('#articleTab').toggle();
 });
 
-$(":checkbox").click(function() {
-        $('.newsResults').toggle();
-        $('.jobResults').toggle();
+$(":checkbox").click(function () {
+    $('#articleTab').toggle();
+    $('.jobResults').toggle();
 })
