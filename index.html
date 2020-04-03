@@ -7,9 +7,15 @@
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../assets/css styles/reset.css">
+    <link rel="stylesheet" href="../assets/css styles/style.css">
+    <link rel="stylesheet" href="../assets/css styles/index-styles.css">
+
     <link rel="stylesheet" href="./assets/css styles/reset.css">
     <link rel="stylesheet" href="./assets/css styles/style.css">
     <link rel="stylesheet" href="./assets/css styles/landing-styles.css">
+
     <title>Job Search & Article Finder</title>
 </head>
 
@@ -24,15 +30,18 @@
             <!-- .headerColumn-1 ends -->
             <div class="col s12 formWrapper">
                 <form class="col s12 formField">
-                    <div class="row">
-                        <p class="center-align formHeader"> Note to Developers: Placeholder Texts: <br> Looking to search a job or a newspaper articles?
-                            <br> Enter your search term keywords in the field below and click search button to find jobs or articles. </p>
-                        <div class="input-field col s12">
-                            <input placeholder="Enter a word, phrase or keywords here" id="searchField" type="text" class="validate center-align">
-                            <label for="searchField" class="inputTexts"></label>
+                    <div class="row formRow">
+                        <p class="center-align formHeader"> Looking to search a job or a newspaper articles?
+                            <br> Enter keyword(s) below and click search button. </p>
+                        <div class="input-field col s6 jobInput" id="jobInputDiv">
+                            <input placeholder="Search Jobs" id="jobSearchField" type="text" class="validate center-align">
+                            <label for="jobSearchField" class="inputTexts"></label>
                         </div>
-                        <button class="btn waves-effect waves-light" id="landingButton" type="submit" name="action">Search
-                        </button>
+                        <div class="input-field col s6" id="articleInputDiv">
+                            <input placeholder=" Search Articles" id="articleSearchField" type="text" class="validate center-align">
+                            <label for="articleSearchField" class="inputTexts"></label>
+                        </div>
+                        <button class="btn waves-effect waves-light" id="landingButton" type="submit" name="action">Search </button>
 
                     </div>
                 </form>
