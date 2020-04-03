@@ -6,9 +6,15 @@ $(document).click(function (event) {
 
     var toggle = true;
 
+<<<<<<< HEAD
     $.get(url1, function (response) {
         console.log("NEWS SEARCH API ****************", response);
         $("#articleTab").empty();
+=======
+    $.get(url1, function(response) {
+        console.log("NEWS SEARCH API ****************", response);
+        $(".newsResults").empty();
+>>>>>>> master
         for (let i = 0; i < response.articles.length; i++) {
             var newsCard = $('<div class="card-panel">');
             newsCard.append('<h5><a href = "' + response.articles[i].url + '" target="_blank">' + response.articles[i].title + '</a></h5>');
@@ -26,7 +32,12 @@ $(document).click(function (event) {
     $('#articleTab').toggle();
 });
 
+<<<<<<< HEAD
 $(":checkbox").click(function () {
     $('#articleTab').toggle();
+=======
+$(":checkbox").click(function() {
+    $('.newsResults').toggle();
+>>>>>>> master
     $('.jobResults').toggle();
 })
