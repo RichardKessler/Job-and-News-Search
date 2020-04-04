@@ -4,6 +4,8 @@ $(document).ready(function () {
     var jobPage = 1;
     var totalJobPages = 0;
 
+    var toggle = true;
+
     function showJobs() {
 
         //JOB API
@@ -79,6 +81,23 @@ $(document).ready(function () {
     
     showJobs();
     showNews();
+
+    $('#jobButton').click(function(){
+        if (toggle === false){
+            $('#articleTab').toggle();
+            $('#jobTab').toggle();
+            toggle=true;
+        }
+    })
+
+    $('#articleButton').click(function(){
+        if (toggle === true){
+            $('#jobTab').toggle();
+            $('#articleTab').toggle();
+            toggle=false;
+        }
+    })
+
     //previous page
     $("#jobTab").on('click', '#jobPrevious', function () {
         if (jobPage > 1) {
