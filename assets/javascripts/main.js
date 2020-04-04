@@ -13,7 +13,6 @@ $(document).ready(function () {
     function showJobs() {
 
         //JOB API
-
         var APIkey = "d06b0526f3dd2c32f58a1ae2727794e5";
         var APPid = "6c9cf9f3";
         console.log("jobAPI -> userSearch222222222222", userSearch);
@@ -77,15 +76,15 @@ $(document).ready(function () {
 
                 newsCard.append('<h6>' + newsResults[i].description + '</h6>');
                 var newsContent = newsResults[i].content;
-                if (newsContent === null) { 
+                if (newsContent === null) {
                     newsContent = ''
                     newsCard.append('<h6>' + newsContent);
-                } 
-                else { 
-                    newsContent = newsResults[i].content.split("[") 
+                }
+                else {
+                    newsContent = newsResults[i].content.split("[")
                     newsCard.append('</br><h6>' + newsContent[0]);
                 }
-                
+
 
                 $("#articleTab").append(newsCard);
             }
@@ -97,21 +96,24 @@ $(document).ready(function () {
         })
     }
 
+
+
     showJobs();
     showNews();
 
+    // displays jobs on toggle
     $('#jobButton').click(function () {
         if (toggle === false) {
-            $('#articleTab').toggle();
-            $('#jobTab').toggle();
+            $('#articleTab').hide()
+            $('#jobTab').show()
             toggle = true;
         }
     })
-
+    //displays articles on toggle
     $('#articleButton').click(function () {
         if (toggle === true) {
-            $('#jobTab').toggle();
-            $('#articleTab').toggle();
+            $('#jobTab').hide()
+            $('#articleTab').show()
             toggle = false;
         }
     })
@@ -147,4 +149,16 @@ $(document).ready(function () {
 
         }
     })
+    // 
+    var screenSize = window.matchMedia("(min-width: 993px)")
+    
+    function mediaQuery(screenSize) {
+        if (screenSize.matches) {
+            $('#articleTab').show()
+            $('#jobTab').show()
+        }
+    }
+    screenSize.addListener(mediaQuery);
+    
+        ////////////////////////////////////////////////////////
 })
