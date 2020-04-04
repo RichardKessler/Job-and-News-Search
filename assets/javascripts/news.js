@@ -1,4 +1,4 @@
-$(document).click(function (event) {
+$("#articleButton").click(function (event) {
     event.preventDefault();
 
     var searchTerm = 'javascript'//$("#searchTerm").val();
@@ -6,15 +6,9 @@ $(document).click(function (event) {
 
     var toggle = true;
 
-<<<<<<< HEAD
     $.get(url1, function (response) {
         console.log("NEWS SEARCH API ****************", response);
         $("#articleTab").empty();
-=======
-    $.get(url1, function(response) {
-        console.log("NEWS SEARCH API ****************", response);
-        $(".newsResults").empty();
->>>>>>> master
         for (let i = 0; i < response.articles.length; i++) {
             var newsCard = $('<div class="card-panel">');
             newsCard.append('<h5><a href = "' + response.articles[i].url + '" target="_blank">' + response.articles[i].title + '</a></h5>');
@@ -22,22 +16,13 @@ $(document).click(function (event) {
             var dateStamp = response.articles[i].publishedAt;
             dateStamp = dateStamp.split('T');
             newsCard.append('<h6>' + response.articles[i].author + ' || ' + dateStamp);
-            newsCard.append('<h6>' + response.articles[i].description);
+            var descriptionSplit = response.articles[i].description.split('[');
+
+            newsCard.append('<h6>' + descriptionSplit);
             newsCard.append('<h6>' + response.articles[i].content);
 
 
             $("#articleTab").append(newsCard);
         }
     })
-    $('#articleTab').toggle();
 });
-
-<<<<<<< HEAD
-$(":checkbox").click(function () {
-    $('#articleTab').toggle();
-=======
-$(":checkbox").click(function() {
-    $('.newsResults').toggle();
->>>>>>> master
-    $('.jobResults').toggle();
-})

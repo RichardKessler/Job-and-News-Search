@@ -95,7 +95,6 @@
 
 .tabcontent {
 	color: #333;
-	display: none;
 	padding: 50px;
 	text-align: center;
 	margin-top: 20px;
@@ -112,18 +111,6 @@
 }
 
 .footerRow {
-<<<<<<< HEAD
-    background-color: #414141;
-    padding: 2rem;
-    color: white;
-}
-
-@media only screen and (max-width: 900px) {
-    .toggle{
-        
-    }
-}
-=======
 	background-color: #414141;
 	padding: 2rem;
 	color: white;
@@ -150,4 +137,3 @@
 	padding: 2rem;
 	margin-bottom: 3rem;
 }
->>>>>>> master
