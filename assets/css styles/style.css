@@ -95,7 +95,6 @@
 
 .tabcontent {
 	color: #333;
-	display: none;
 	padding: 50px;
 	text-align: center;
 	margin-top: 20px;
@@ -137,4 +136,20 @@
 .articleBox {
 	padding: 2rem;
 	margin-bottom: 3rem;
+}
+#toggleOn{
+    display:none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 992px) {
+
+    #articleTab{
+        display: none;
+    }
+    #toggleOff{
+        display: none;
+    }
+    #toggleOn{
+        display:block;
+    }
 }
