@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    var userSearch = 'javascript' //localStorage.getItem('userSearch');
-    var userLocation = 'raleigh, nc' //localStorage.getItem('userLocation');
+    var userSearch = localStorage.getItem('userSearch');
+    var userLocation = localStorage.getItem('userLocation');
 
     var jobPage = 1;
     var totalJobPages = 0;
@@ -85,14 +85,14 @@ $(document).ready(function() {
                 if (newsAuthor === null) { newsAuthor = 'Anonymous' }
                 newsCard.append('<h6>' + newsAuthor + ' || ' + dateStamp[0]);
 
-                newsCard.append('<h6>' + newsResults[i].description + '</h6>');
+                newsCard.append('<p>' + newsResults[i].description + '</p>');
                 var newsContent = newsResults[i].content;
                 if (newsContent === null) {
                     newsContent = ''
-                    newsCard.append('<h6>' + newsContent);
+                    newsCard.append('<p>' + newsContent);
                 } else {
                     newsContent = newsResults[i].content.split("[")
-                    newsCard.append('</br><h6>' + newsContent[0]);
+                    newsCard.append('</br><p>' + newsContent[0]);
                 }
 
                 newsCard.append('<button id="saveNews" class="btn waves-effect waves-light" type="submit">Save Article<i class="material-icons right">archive</i></button>');
@@ -112,6 +112,30 @@ $(document).ready(function() {
     showJobs();
     showNews();
 
+    // Save buttons
+
+    $('#jobTab').on('click', '#saveJobs', function() {
+        console.log(this.parentElement.innerHTML);
+        savedJob = this.parentElement.innerHTML;
+        savedJob.split("<button>");
+        console.log("savedJob", savedJob[0])
+        
+        jobArray.push(this.parentElement.innerHTML);
+        localStorage.setItem('JOBS', JSON.stringify(jobArray));
+
+    })
+
+    $('#articleTab').on('click', '#saveNews', function() {
+        console.log(this.parentElement.children[0].innerHTML);
+
+        newsArray.push(this.parentElement.innerHTML);
+        localStorage.setItem('ARTICLES', JSON.stringify(newsArray));
+
+    })
+    //////////////////////
+
+    // Toggle buttons
+
     // displays jobs on toggle
     $('#jobButton').click(function() {
             if (toggle === false) {
@@ -128,6 +152,9 @@ $(document).ready(function() {
             toggle = false;
         }
     })
+    ///////////////////
+
+    //Page buttons
 
     //previous job page
     $("#jobTab").on('click', '#jobPrevious', function() {
@@ -160,7 +187,10 @@ $(document).ready(function() {
 
             }
         })
-        // 
+    //////////////////
+
+    // JS media query for upsizing
+
     var screenSize = window.matchMedia("(min-width: 993px)")
 
     function mediaQuery(screenSize) {
@@ -170,24 +200,5 @@ $(document).ready(function() {
         }
     }
     screenSize.addListener(mediaQuery);
-
-    $('#jobTab').on('click', '#saveJobs', function() {
-        console.log(this.parentElement.children[0].innerHTML);
-
-        jobArray.push(this.parentElement.innerHTML);
-        localStorage.setItem('JOBS', JSON.stringify(jobArray));
-
-    })
-
-    $('#articleTab').on('click', '#saveNews', function() {
-        console.log(this.parentElement.children[0].innerHTML);
-
-        newsArray.push(this.parentElement.innerHTML);
-        localStorage.setItem('ARTICLES', JSON.stringify(newsArray));
-
-    })
-
-
-
-    ////////////////////////////////////////////////////////
+    /////////////////////
 })
