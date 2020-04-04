@@ -16,7 +16,6 @@ $(document).ready(function() {
     function showJobs() {
 
         //JOB API
-
         var APIkey = "d06b0526f3dd2c32f58a1ae2727794e5";
         var APPid = "6c9cf9f3";
         console.log("jobAPI -> userSearch222222222222", userSearch);
@@ -91,7 +90,6 @@ $(document).ready(function() {
                     newsCard.append('</br><h6>' + newsContent[0]);
                 }
 
-                newsCard.append('<button class="btn waves-effect waves-light" type="submit">Save Article<i class="material-icons right">archive</i></button>');
 
                 $("#articleTab").append(newsCard);
             }
@@ -103,21 +101,24 @@ $(document).ready(function() {
         })
     }
 
+
+
     showJobs();
     showNews();
 
+    // displays jobs on toggle
     $('#jobButton').click(function() {
-        if (toggle === false) {
-            $('#articleTab').toggle();
-            $('#jobTab').toggle();
-            toggle = true;
-        }
-    })
-
+            if (toggle === false) {
+                $('#articleTab').hide()
+                $('#jobTab').show()
+                toggle = true;
+            }
+        })
+        //displays articles on toggle
     $('#articleButton').click(function() {
         if (toggle === true) {
-            $('#jobTab').toggle();
-            $('#articleTab').toggle();
+            $('#jobTab').hide()
+            $('#articleTab').show()
             toggle = false;
         }
     })
@@ -147,10 +148,22 @@ $(document).ready(function() {
         })
         //next page
     $("#articleTab").on('click', '#newsNext', function() {
-        if (newsPage < totalNewsPages) {
-            newsPage++;
-            showNews();
+            if (newsPage < totalNewsPages) {
+                newsPage++;
+                showNews();
 
+            }
+        })
+        // 
+    var screenSize = window.matchMedia("(min-width: 993px)")
+
+    function mediaQuery(screenSize) {
+        if (screenSize.matches) {
+            $('#articleTab').show()
+            $('#jobTab').show()
         }
-    })
+    }
+    screenSize.addListener(mediaQuery);
+
+    ////////////////////////////////////////////////////////
 })
