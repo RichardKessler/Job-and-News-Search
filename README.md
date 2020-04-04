@@ -18,7 +18,7 @@ You can access this application by going to:
 
 ## Application Details
 
-This application is used as a dual purpose tool to search for job listings in a givin area, and to search for relevant news articles.  Once you have entered in your search criteria you are brought to another page that displays the job listings and news articles.  This is a great tool for learning about something new to you as a developer by reading the articles provided, and for looking for a new job within your area or a new area if you are looking to move.  
+This application is used as a dual purpose tool to search for job listings in a givin area, and to search for relevant news articles.  Once you have entered in your search criteria you are brought to another page that displays the job listings and news articles.  This is a great tool for learning about something new to you as a developer by reading the articles provided, and for looking for a new job within your area or a new area if you are looking to move.  At the top of every page is a navigation bar so you can get to your saved job listings and news articles as well as do more searches and go back to the home page.
 
 The landing page presents you with the information about the application.  This page also allows you to enter your search criteria.  You will see two input fields on the page.  The first field, the one on the left, is where you enter your search terms that will filter what you are looking for.  For example IF you wanted to lookup Ruby or Vue.js then you would enter "Ruby" or "Vue.js" in that field.  The second search field is where you enter the city that you want to search for job listings in.  For example if you wanted to lookup listings in Washington DC then you would just enter "Washington DC" in that search field.  Once you have your search term and city location entered just click on the search button and get your results.
 
@@ -28,3 +28,4 @@ This page also displays the relevant news articles to your searched term.  This 
 
 The last thing you will be able to do on this page is save any job listings and news articles so that you can access them later if you run out of time.  There is a save button within the lists for each displayed result.  When you hit save that job listing or news article gets stored and pulled when you go to the saved list page.
 
+The saved page allows you to view any job listings and news articles that you have saved at a later time.  If you wanted to do some research on a topic and saved a few articles but only had time to read one then you can always read the rest when you have more time.  The same for any job listings that you have saved.  If you are applying to multiple listings you can save ones that you have yet to apply for.
