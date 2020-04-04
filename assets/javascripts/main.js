@@ -115,11 +115,7 @@ $(document).ready(function() {
     // Save buttons
 
     $('#jobTab').on('click', '#saveJobs', function() {
-        console.log(this.parentElement.innerHTML);
-        savedJob = this.parentElement.innerHTML;
-        savedJob.split("<button>");
-        console.log("savedJob", savedJob[0])
-        
+        console.log(this.parentElement.innerHTML);      
         jobArray.push(this.parentElement.innerHTML);
         localStorage.setItem('JOBS', JSON.stringify(jobArray));
 

@@ -6,10 +6,12 @@ $(document).ready(function() {
 
     for (var i = 0; i < jobsArray.length; i++) {
         $("#jobResult").append(jobsArray[i]);
+        $("#saveJobs").remove();
     }
 
     for (var l = 0; l < newsArray.length; l++) {
         $("#articleResult").append(newsArray[l]);
+        $("#saveNews").remove();
     }
 
 })
