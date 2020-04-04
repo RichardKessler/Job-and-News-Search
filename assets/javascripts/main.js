@@ -73,7 +73,7 @@ $(document).ready(function () {
 
                 var newsAuthor = newsResults[i].author;
                 if (newsAuthor === null) { newsAuthor = 'Anonymous' }
-                newsCard.append('<h6>' + newsAuthor + ' || ' + dateStamp);
+                newsCard.append('<h6>' + newsAuthor + ' || ' + dateStamp[0]);
 
                 newsCard.append('<h6>' + newsResults[i].description + '</h6>');
                 var newsContent = newsResults[i].content;
