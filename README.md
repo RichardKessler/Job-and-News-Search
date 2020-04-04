@@ -18,4 +18,4 @@ You can access this application by going to:
 
 ## Application Details
 
-When you first open the application 
+This application is used as a dual purpose tool to search for job listings in a givin area, and to search for relevant news articles.  Once you have entered in your search criteria you are brought to another page that displays the job listings and news articles.  This is a great tool for learning about something new to you as a developer by reading the articles provided, and for looking for a new job within your area or a new area if you are looking to move.  
