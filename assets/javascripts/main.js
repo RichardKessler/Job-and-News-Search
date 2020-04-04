@@ -57,6 +57,7 @@ $(document).ready(function() {
                 jobCard.append('<button id="saveJobs" class="btn waves-effect waves-light" type="submit">Save Job Listing<i class="material-icons right">archive</i></button>');
 
                 $("#jobTab").append(jobCard);
+              
             }
             //calculating total number of pages
             totalJobPages = Math.ceil(response.count / jobResults.length);
