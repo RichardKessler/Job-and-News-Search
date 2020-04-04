@@ -48,6 +48,7 @@ $(document).ready(function () {
                 jobCard.append('<p>' + jobResults[i].description);
 
                 $("#jobTab").append(jobCard);
+              
             }
             //calculating total number of pages
             totalJobPages = Math.ceil(response.count / jobResults.length);
