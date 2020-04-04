@@ -38,11 +38,19 @@
                             <label for="jobSearchField" class="inputTexts"></label>
                         </div>
                         <div class="input-field col s6" id="locationInputDiv">
-                            <input placeholder=" Search Location" id="locationSearchField" type="text" class="validate center-align">
+                            <input placeholder=" Search Location (optional)" id="locationSearchField" type="text" class="validate center-align">
                             <label for="locationSearchField" class="inputTexts"></label>
                         </div>
-                        <a href="./main.html" class="btn waves-effect waves-light" id="landingButton">Search </a>
+                        <a  class="btn waves-effect waves-light modal-trigger" id="landingButton" href = "#modal1">Search </a>
 
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                              <p>Error: please enter a valid search term</p>
+                            </div>
+                            <div class="modal-footer">
+                              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                            </div>
+                          </div> 
                     </div>
                 </form>
 
