@@ -90,6 +90,7 @@ $(document).ready(function() {
                     newsCard.append('</br><h6>' + newsContent[0]);
                 }
 
+                newsCard.append('<button class="btn waves-effect waves-light" type="submit">Save Article<i class="material-icons right">archive</i></button>');
 
                 $("#articleTab").append(newsCard);
             }
