@@ -25,7 +25,7 @@
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 1.5rem;
-    font-size: 5vw;
+    font-size: 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,8 @@
 }
 
 .headerColumn-1 p {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
+    font-size: 1.5vw;
     color: #f5f8cb;
     text-shadow: 2px 2px 4px #000000;
     padding: 0 3rem;
@@ -46,7 +47,8 @@
     text-shadow: 5px 5px 10px #000000;
 }
 
-.mainContentRow-1, .mainContentRow-2 {
+.mainContentRow-1,
+.mainContentRow-2 {
     margin-top: 1rem;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -106,8 +108,20 @@
     margin-top: 20px;
 }
 
-#jobTab, #articleTab {
-    background-color: #f8f6f6;
+#jobTab {
+    background-color: #29a848;
+}
+
+#articleTab {
+    background-color: rgb(24, 73, 179);
+}
+
+#jobResult {
+    background-color: #29a848;
+}
+
+#articleResult {
+    background-color: rgb(24, 73, 179);
 }
 
 .card-title {
@@ -124,7 +138,8 @@
     color: white;
 }
 
-#jobSaveButton, #articleSaveButton {
+#jobSaveButton,
+#articleSaveButton {
     margin: 2rem auto;
     padding: 1rem;
     width: 100%;
@@ -134,12 +149,14 @@
     cursor: pointer;
 }
 
-#jobSaveButton:hover, #articleSaveButton:hover {
+#jobSaveButton:hover,
+#articleSaveButton:hover {
     background-color: #c3c3c3;
     color: #fff;
 }
 
-.jobBox, .articleBox {
+.jobBox,
+.articleBox {
     padding: 2rem;
     margin-bottom: 3rem;
 }
@@ -147,7 +164,6 @@
 #toggleOn {
     display: none;
 }
-
 
 @media screen and (min-width: 320px) and (max-width: 992px) {
     #articleTab {

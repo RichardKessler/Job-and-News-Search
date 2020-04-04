@@ -12,7 +12,7 @@ html {
   background-color: rgb(17, 65, 105);
   background-color: transparent;
   margin: 0;
-  min-height: 800px;
+  /* min-height: 800px; */
 }
 
 .headerRow {
@@ -30,14 +30,16 @@ html {
 
 .formHeader {
   padding: 4rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #fff;
 }
 
 ::placeholder {
   color: #6cf3d6;
 }
-
+#locationSearchField, #searchTermField {
+  color: #f3ec86;
+}
 #landingButton {
   border-radius: 15px;
   margin-bottom: 5rem;
