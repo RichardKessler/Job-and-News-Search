@@ -5,66 +5,77 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css styles/reset.css">
-    <link rel="stylesheet" href="./assets/css styles/style.css">
+  
+    <link rel="stylesheet" href="./assets/css styles/reset.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link rel="stylesheet" href="./assets/css styles/landing-styles.css">
     <title>Job Search & Article Finder</title>
 </head>
 
 <body>
-
-
-
-    <div class="container mainWrapper" id="mainWrapper">
-
-        
-        <div class="row  headerRow">
-            <div class="col s12 headerColumn-1">
+    <div class="container mainWrapper center-align" id="mainWrapper">
+        <div class="row headerRow">
+            <div class="col s12 center-align headerColumn-1">
                 <i class="material-icons update medium center-align" id="logoIcon">update</i>
-                <h2 class="white-text center-align"> Job Search & Article Finder </h2>
-                <p class="center-align"> <em>daily-updated easy-to-use one-stop job searching and articles searching
-                        resource </em></p>
+                <h2 class="@extend blue-text text-lighten-4 center-align"> Job & Article Finder </h2>
+                <p class="center-align flow-text"> <em>daily-updated &bull; easy-to-use &bull; one-stop job and articles searching
+                        resource center</em></p>
             </div>
             <!-- .headerColumn-1 ends -->
             <div class="col s12 formWrapper">
                 <form class="col s12 formField">
                     <div class="row formRow">
-                        <p class="center-align formHeader"> Looking to search a job or a newspaper articles?
-                            <br> Enter keyword(s) below and click search button. </p>
-                        <div class="input-field col s6 jobInput" id="jobInputDiv">
-                            <input placeholder="Search Term" id="jobSearchField" type="text" class="validate center-align">
-                            <label for="jobSearchField" class="inputTexts"></label>
+                        <p class="center-align formHeader flow-text"> Looking to search a job or a newspaper articles?
+                            <br> Enter keyword(s) and click search button below. </p>
+                        <div class="input-field col s6 jobInput flow-text" id="jobInputDiv">
+                            <input placeholder="Search Term" id="searchTermField" type="text" class="validate center-align">
+                            <label for="searchTermField" class="inputTexts"></label>
                         </div>
-                        <div class="input-field col s6" id="locationInputDiv">
-                            <input placeholder=" Search Location (optional)" id="locationSearchField" type="text" class="validate center-align">
+                        <div class="input-field col s6 flow-text" id="locationInputDiv">
+                            <input placeholder=" Location (optional)" id="locationSearchField" type="text" class="validate center-align">
                             <label for="locationSearchField" class="inputTexts"></label>
                         </div>
-                        <a  class="btn waves-effect waves-light modal-trigger" id="landingButton" href = "#modal1">Search </a>
+                        <a class="btn waves-effect waves-light modal-trigger #0d47a1 blue darken-4" id="landingButton" href="#modal1"><i class="material-icons left">search</i>Search </a>
+                        
 
                         <div id="modal1" class="modal">
                             <div class="modal-content">
-                              <p>Error: please enter a valid search term</p>
+                                <p>Error: please enter a valid search term</p>
                             </div>
                             <div class="modal-footer">
-                              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
                             </div>
-                          </div> 
+                        </div>
                     </div>
                 </form>
 
 
             </div>
             <!-- .formWrapper ends -->
+            
             <!-- $$$$$$$$$$$$ FOOTER CONTENT $$$$$$$$$$$$ -->
-            <div class="col s12 center-align landingFooter">
-                <p>&copy 2020 &bull; Job Search & Article Finder &bull; 123 Somewhere Ln, Raleigh, NC 27603 &bull; 919-123-4567 </p>
+            <div class="col s12 center-align footerDiv">
+                <div class="navBox">
+                <nav>
+                    <div class="nav-wrapper #880e4f pink darken-4">
+                    <ul class="center navBarCustom">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="main.html">Searched</a></li>
+                        <li><a href="save.html">Saved</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+                <p class="footerPara flow-text">&copy 2020 &bull; Job & Article Finder &bull; 123 Some Ln, Cary, NC 27519 &bull; 919-123-4567 </p>
+               
             </div>
-            <!-- .landingFooter ends -->
+            <!-- .footerDiv ends -->
 
         </div>
         <!-- .headerRow ends -->
+       
     </div>
     <!-- .mainWrapper ends -->
 
