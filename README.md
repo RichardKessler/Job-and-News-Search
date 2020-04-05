@@ -29,3 +29,11 @@ This page also displays the relevant news articles to your searched term.  This 
 The last thing you will be able to do on this page is save any job listings and news articles so that you can access them later if you run out of time.  There is a save button within the lists for each displayed result.  When you hit save that job listing or news article gets stored and pulled when you go to the saved list page.
 
 The saved page allows you to view any job listings and news articles that you have saved at a later time.  If you wanted to do some research on a topic and saved a few articles but only had time to read one then you can always read the rest when you have more time.  The same for any job listings that you have saved.  If you are applying to multiple listings you can save ones that you have yet to apply for.
+
+## CSS Framework
+
+This application uses Materialize for the styling framework.  We used the grid layout to make our application both mobile and desktop friendly.  We utilized the card component to display the results of the search and saved listings and articles.
+
+## From Mobile to Desktop
+
+This applicaiton was built with a mobile first design.  The mobile display allows for a much more responsive layout that allows the user to toggle between job listings and news artilces so that the display is not cluttered.  When going fomr a mobile display to a desktop display then all of the information gets displayed.
