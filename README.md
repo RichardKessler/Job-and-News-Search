@@ -1,7 +1,7 @@
 # Job and News article Search
 
 ```
-This web application allows you to search for a new job or relevant news article within the development profession.
+This web application allows you to search for a new job or relevant news articles for any profession.
 ```
 
 ## User Story
@@ -9,12 +9,12 @@ This web application allows you to search for a new job or relevant news article
 ```
 As a User
 I WANT to be able to find jobs in a certain area AND/OR news articles on the search terms
-SO THAT I can find a new job AND/OR do research on a developer topic
+SO THAT I can find a new job AND/OR do research on any givin topic
 ```
 
 ## Getting Started
 
-You can access this application by going to: 
+You can access this application by going to: https://richardkessler.github.io/Job-and-News-Search/
 
 ## Application Details
 
