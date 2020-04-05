@@ -8,44 +8,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css styles/reset.css">
+    <link rel="stylesheet" href="./assets/css styles/landing-styles.css">
     <link rel="stylesheet" href="./assets/css styles/style.css">
+
     <title>Job Search & Article Finder</title>
 </head>
 
 <body>
     <div class="container mainWrapper" id="mainWrapper">
-        <div class="row section headerRow">
-            <div class="col s12 headerColumn-1">
+        <div class="row headerRow">
+            <div class="col s12 center-align headerColumn-1">
                 <i class="material-icons update medium center-align" id="logoIcon">update</i>
-                <h2 class="white-text center-align"> Job Search & Article Finder </h2>
-                <p class="center-align"> <em>daily-updated easy-to-use one-stop job finder resource </em></p>
+                <h2 class="@extend blue-text text-lighten-4 center-align"> Job Search & Article Finder </h2>
+                <p class="center-align flow-text"> <em>daily-updated &bull; easy-to-use &bull; one-stop job and articles searching
+                        resource center</em></p>
             </div>
             <!-- .headerColumn-1 ends -->
         </div>
         <!-- .headerRow ends -->
-        <!-- $$$$$$$$$$$$ MAIN CONTENT TAB ROW $$$$$$$$$$$$ -->
-        <div class="row saveRow">
-            <div class="col s12 l6 jobSaveColumn">
-                <div id="jobSaveButton">Saved Jobs</div>
-                <div id="jobResult" class="jobBox">
-                </div>
-            </div>
-            <div class="col s12 l6 newsSaveColumn">
-                <div id="articleSaveButton">Saved Articles</div>
-                <div id="articleResult" class="articleBox">
-                </div>
-            </div>
-        </div>
-        <!-- .saveRow ends -->
+        <!-- $$$$$$$$$$$$ Nav Section $$$$$$$$$$$$ -->
 
-        <!-- $$$$$$$$$$$$ FOOTER CONTENT $$$$$$$$$$$$ -->
-        <div class="row section footerRow">
-            <div class="col s12 center-align footerColumn-1">
-                <p>&copy 2020 &bull; Job Search & Article Finder &bull; 123 Somewhere Ln, Raleigh, NC 27603 &bull; 919-123-4567 </p>
-            </div>
-            <!-- .footerColumn-1 ends -->
+        <div class="navBox">
+            <nav>
+                <div class="nav-wrapper #880e4f pink darken-4">
+                    <ul class="center navBarCustom">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="main.html">Searched</a></li>
+                        <li><a href="save.html">Saved</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <!-- .footerRow ends -->
+        <!-- $$$$$$$$$$$$ MAIN CONTENT ROW-2 $$$$$$$$$$$$ -->
+        <div class="row section mainContentRow-2">
+            <div class="col s12 mainContentColumn-2-1">
+                <h5 class="center-align"> Saved Jobs and Articles </h5>
+                <p class="center-align">View the saved result below. </p>
+            </div>
+            <!-- .mainContentColumn-2-1 ends -->
+
+        </div>
+        <!-- .mainContentRow-2 ends -->
+
+
+        <!-- $$$$$$$$$$$$ MAIN CONTENT TAB ROW $$$$$$$$$$$$ -->
+        <div class="row saveWrapperRow">
+            <div class="col s12 l6 jobSaveColumn">
+                <div class="tablink jobSaveLink" id="jobSaveButton">Saved Jobs</div>
+                <div class="tablink articleSaveLink" id="articleSaveButton">Saved Articles</div>
+            </div>
+            <!-- .tabColumn ends -->
+            <div class="row saveWrapperRow">
+                <div id="jobResult" class="tabcontent col s12 l6 jobBox"> </div>
+
+                <div id="articleResult" class="tabcontent col s12 l6 articleBox"> </div>
+            </div>
+        </div>
+        <!-- .saveWrapperRow ends -->
+
+       <!-- $$$$$$$$$$$$ FOOTER CONTENT $$$$$$$$$$$$ -->
+        <div class="row footerRow">
+            <div class="col s12 center-align footerDiv">
+                <p class="footerPara flow-text">&copy 2020 &bull; Job & Article Finder &bull; 123 Some Ln, Cary, NC 27519 &bull; 919-123-4567 </p>
+
+            </div>
+            <!-- .footerDiv ends -->
+        </div><!-- .footerRow ends -->
     </div>
     <!-- .mainWrapper ends -->
 
