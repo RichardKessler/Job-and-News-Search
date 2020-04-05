@@ -37,3 +37,17 @@ This application uses Materialize for the styling framework.  We used the grid l
 ## From Mobile to Desktop
 
 This applicaiton was built with a mobile first design.  The mobile display allows for a much more responsive layout that allows the user to toggle between job listings and news artilces so that the display is not cluttered.  When going fomr a mobile display to a desktop display then all of the information gets displayed.
+
+## Built With
+
+* [Materialize](https://materializecss.com/) - CSS Framework and layout
+* Adzuna Jobs API - An API usesd for looking up job listings
+* [News API](https://newsapi.org/) - An API used to lookup news articles
+* HTML/CSS/JS
+* [JQuery](https://jquery.com/)
+
+## Development
+
+* [Elliot Morgan](https://github.com/Elliotmrgn) - 
+* [Richard Kessler](https://github.com/RichardKessler) - 
+* [Shiva Sharma](https://github.com/ssh1sharma) - 
