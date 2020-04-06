@@ -42,38 +42,50 @@
         <!-- $$$$$$$$$$$$ MAIN CONTENT ROW-2 $$$$$$$$$$$$ -->
         <div class="row section mainContentRow-2">
             <div class="col s12 mainContentColumn-2-1">
-                <h5 class="center-align"> Saved Jobs and Articles </h5>
-                <p class="center-align">View the saved result below. </p>
+                <h5 class="center-align"> Searched Jobs and Articles </h5>
+                <p class="center-align">View your search result below. You can save your recent search.</p>
             </div>
             <!-- .mainContentColumn-2-1 ends -->
 
         </div>
         <!-- .mainContentRow-2 ends -->
-
-
         <!-- $$$$$$$$$$$$ MAIN CONTENT TAB ROW $$$$$$$$$$$$ -->
-        <div class="row saveWrapperRow">
-            <div class="col s12 l6 jobSaveColumn">
-                <div class="tablink jobSaveLink" id="jobSaveButton">Saved Jobs</div>
-                <div class="tablink articleSaveLink" id="articleSaveButton">Saved Articles</div>
+        <div class="row tabRow">
+            <div class="col s12 tabColumn" id="toggleOff">
+                <div class="tablink jobsTablink">Jobs</div>
+                <div class="tablink articlesTablink">Articles</div>
             </div>
             <!-- .tabColumn ends -->
-            <div class="row saveWrapperRow">
-                <div id="jobResult" class="tabcontent col s12 l6 jobBox"> </div>
-
-                <div id="articleResult" class="tabcontent col s12 l6 articleBox"> </div>
+            <!-- ####### FOUND DUPLICATE tabColumn. BOTH ARE HARD CODED (one div one button); SO ..... If needed for toggleOn/toggleOff, may need to use empty div and dynamically put texts or create button with dynamic texts. -->
+            <div class="col s12 tabColumn toggle" id="toggleOn">
+                <button class="tablink" id="jobButton">Jobs</button>
+                <button class="tablink" id="articleButton">Articles</button>
             </div>
-        </div>
-        <!-- .saveWrapperRow ends -->
+            <!-- .tabColumn ends -->
 
-       <!-- $$$$$$$$$$$$ FOOTER CONTENT $$$$$$$$$$$$ -->
+            <div class="row tabRow">
+                <div id="jobTab" class="tabcontent col s12 l6">
+
+                </div>
+
+                <div id="articleTab" class="tabcontent col s12 l6">
+
+                </div>
+            </div>
+
+
+        </div>
+        <!-- .tabRow ends -->
+
+        <!-- $$$$$$$$$$$$ FOOTER CONTENT $$$$$$$$$$$$ -->
         <div class="row footerRow">
             <div class="col s12 center-align footerDiv">
                 <p class="footerPara flow-text">&copy 2020 &bull; Job & Article Finder &bull; 123 Some Ln, Cary, NC 27519 &bull; 919-123-4567 </p>
 
             </div>
             <!-- .footerDiv ends -->
-        </div><!-- .footerRow ends -->
+        </div>
+        <!-- .footerRow ends -->
     </div>
     <!-- .mainWrapper ends -->
 
@@ -84,8 +96,6 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <!-- <script src="jquery-3.4.1.min.js"></script> -->
-    <!-- <script src="./assets/javascripts/script.js"></script> -->
     <script src="./assets/javascripts/saved.js"></script>
 
 </body>
