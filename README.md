@@ -48,6 +48,6 @@ This applicaiton was built with a mobile first design.  The mobile display allow
 
 ## Development
 
-* [Elliot Morgan](https://github.com/Elliotmrgn) - 
-* [Richard Kessler](https://github.com/RichardKessler) - 
-* [Shiva Sharma](https://github.com/ssh1sharma) - 
+* [Elliot Morgan](https://github.com/Elliotmrgn) - Back End Development, QA Testing, Project API Lead
+* [Richard Kessler](https://github.com/RichardKessler) - Front/Back End Development, QA Testing, Project Lead
+* [Shiva Sharma](https://github.com/ssh1sharma) - Front End Development, QA Testing, Project Design Lead
