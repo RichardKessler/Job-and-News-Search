@@ -64,7 +64,9 @@ $(document).ready(function () {
                     //calculating total number of pages
                     totalJobPages = Math.ceil(response.count / jobResults.length);
                     //adds next and previous page
-                    $('#jobTab').append('<button id="jobPrevious">previous</button><button id="jobNext">next</button><span> page: ' + jobPage + ' </span>')
+                    if (totalJobPages > 1) {
+                        $('#jobTab').append('<button id="jobPrevious">previous</button><button id="jobNext">next</button><span> page: ' + jobPage + ' </span>')
+                    }
                 }
             },
             error: function () {
