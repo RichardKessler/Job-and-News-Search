@@ -1,87 +1,101 @@
 html {
-	background: url(../images/workplace-optimized-1.jpg) no-repeat center
-		center fixed;
-	background-size: cover;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+    background: url(../images/workplace-optimized-1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 #mainWrapper {
-	/* background-color: rgba(43, 152, 185, 0.6); */
-	background-color: rgba(93, 28, 26, 0.7);
-	padding: 1rem;
-	line-height: 1.2;
+    /* background-color: rgba(43, 152, 185, 0.6); */
+    background-color: rgba(93, 28, 26, 0.7);
+    padding: 1rem;
+    line-height: 1.2;
 }
+
 #logoIcon {
-	color: #d0e7e1;
-	margin-top: 2rem;
-	text-shadow: 5px 5px 10px #000000;
+    color: #d0e7e1;
+    margin-top: 2rem;
+    text-shadow: 5px 5px 10px #000000;
 }
+
 #mainWrapper h2 {
-	margin: 0;
-	text-transform: uppercase;
-	text-shadow: 2px 2px 4px #000000;
-	font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: bold;
 }
+
 .headerColumn-1 p {
-	color: #f5f8cb;
-	text-shadow: 2px 2px 4px #000000;
-	padding-bottom: 2rem;
+    color: #f5f8cb;
+    text-shadow: 2px 2px 4px #000000;
+    padding-bottom: 2rem;
 }
+
 .flow-text {
-	font-size: 1rem;
-	color: #d0e7e1;
+    font-size: 1rem;
+    color: #d0e7e1;
 }
+
 .formHeader {
-	margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 ::placeholder {
-	color: #dcf5f1;
-	font-size: 0.9rem;
+    color: #dcf5f1;
+    font-size: 0.9rem;
 }
+
 #jobInputDiv,
 #locationInputDiv {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 #locationSearchField,
 #searchTermField {
-	color: #f3ec86;
-	width: 95%;
+    color: #f3ec86;
+    width: 95%;
 }
+
 #locationSearchField:focus,
 #searchTermField:focus {
-	border-bottom: 1px dotted #18ffff;
+    border-bottom: 1px dotted #18ffff;
 }
 
 #landingButton {
-	border-radius: 20px;
-	box-shadow: 2px 2px 4px #000000;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #000000;
 }
+
 #landingButton:hover {
-	color: orange;
-	box-shadow: 6px 6px 10px #000000;
+    color: orange;
+    box-shadow: 6px 6px 10px #000000;
 }
+
 .nav-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
+
 .navBox {
-	margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .navBarCustom li {
-	border: 1px solid #a7266b;
-	border-radius: 10px;
+    border: 1px solid #a7266b;
+    border-radius: 10px;
 }
+
 .footerPara {
-	font-size: 0.9rem;
-	color: rgba(208, 231, 225, 0.7);
+    font-size: 0.9rem;
+    color: rgba(208, 231, 225, 0.7);
 }
+
 .navBarCustom li a:hover {
-	color: orange;
+    color: orange;
 }
