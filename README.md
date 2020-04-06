@@ -48,6 +48,6 @@ This applicaiton was built with a mobile first design.  The mobile display allow
 
 ## Development
 
-* [Elliot Morgan](https://github.com/Elliotmrgn) - Back End Development, QA Testing, Project API Lead
-* [Richard Kessler](https://github.com/RichardKessler) - Front/Back End Development, QA Testing, Project Lead
-* [Shiva Sharma](https://github.com/ssh1sharma) - Front End Development, QA Testing, Project Design Lead
+* [Elliot Morgan](https://github.com/Elliotmrgn) - Project Backend Lead, QA Testing, Functionality Troubleshooting, Working with Jobs API
+* [Richard Kessler](https://github.com/RichardKessler) - Project Lead, Building the Testing Environment, QA Testing, Working with News API
+* [Shiva Sharma](https://github.com/ssh1sharma) - Project Design Lead, Implementation of  Materialize Framework, QA Testing
