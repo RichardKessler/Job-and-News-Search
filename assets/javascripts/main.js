@@ -39,8 +39,8 @@ $(document).ready(function () {
                 //setting results to a variable
                 var jobResults = response.results;
                 if (jobResults.length === 0) {
-                    $(".messageBox").append("No job results match your search")
-                    $(".errorCheck").show();
+                    $("#jobTab").append('<div class="card-panel yellow lighten-1"><h5>No Jobs Match </h5></div>')
+                   
                 }
                 else {
                     //populates each entry
@@ -82,9 +82,8 @@ $(document).ready(function () {
             console.log("NEWS SEARCH API ****************", response);
             $("#articleTab").empty();
             var newsResults = response.articles;
-            if (newsResults.length === 0||userSearch===null) {
-                $(".messageBox").append("No news results match your search")
-                $(".errorCheck").show();
+            if (newsResults.length === 0 || userSearch===null) {
+                $("#articleTab").append('<div class="card-panel yellow lighten-1"><h5>No Articles Match </h5></div>')
             }
             else {
                 for (let i = 0; i < newsResults.length; i++) {
