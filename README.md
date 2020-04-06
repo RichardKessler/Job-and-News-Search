@@ -9,7 +9,7 @@ This web application allows you to search for a new job or relevant news article
 ```
 As a User
 I WANT to be able to find jobs in a certain area AND/OR news articles on the search terms
-SO THAT I can find a new job AND/OR do research on any givin topic
+SO THAT I can find a new job AND/OR do research on any given topic
 ```
 
 ## Getting Started
@@ -48,6 +48,6 @@ This applicaiton was built with a mobile first design.  The mobile display allow
 
 ## Development
 
-* [Elliot Morgan](https://github.com/Elliotmrgn) - 
-* [Richard Kessler](https://github.com/RichardKessler) - 
-* [Shiva Sharma](https://github.com/ssh1sharma) - 
+* [Elliot Morgan](https://github.com/Elliotmrgn) - Back End Development, QA Testing, Project API Lead
+* [Richard Kessler](https://github.com/RichardKessler) - Front/Back End Development, QA Testing, Project Lead
+* [Shiva Sharma](https://github.com/ssh1sharma) - Front End Development, QA Testing, Project Design Lead
