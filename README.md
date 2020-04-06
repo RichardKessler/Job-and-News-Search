@@ -9,7 +9,7 @@ This web application allows you to search for a new job or relevant news article
 ```
 As a User
 I WANT to be able to find jobs in a certain area AND/OR news articles on the search terms
-SO THAT I can find a new job AND/OR do research on any givin topic
+SO THAT I can find a new job AND/OR do research on any given topic
 ```
 
 ## Getting Started
