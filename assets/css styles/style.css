@@ -123,3 +123,24 @@ html {
 	background-color: rgba(56, 14, 13, 0.9);
 	padding: 2rem;
 }
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+#toggleOn {
+	display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 992px) {
+	#articleTab {
+		display: none;
+	}
+	#toggleOff {
+		display: none;
+	}
+	#toggleOn {
+		display: block;
+	}
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
