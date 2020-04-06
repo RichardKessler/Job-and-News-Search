@@ -1,11 +1,11 @@
 html {
-
-    background: url(../images/workplace-optimized-1.jpg) no-repeat center center fixed;
+   background: url(../images/workplace-optimized-1.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #mainWrapper {
