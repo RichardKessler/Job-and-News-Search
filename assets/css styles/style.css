@@ -128,11 +128,14 @@ html {
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
 
+
+
+
 #toggleOn {
 	display: none;
 }
 
-@media screen and (min-width: 320px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
 	#articleTab {
 		display: none;
 	}
