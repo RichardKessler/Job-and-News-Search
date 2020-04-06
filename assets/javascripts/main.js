@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     var userSearch = localStorage.getItem('userSearch');
     var userLocation = localStorage.getItem('userLocation');
 
@@ -22,17 +22,14 @@ $(document).ready(function () {
         //JOB API
         var APIkey = "d06b0526f3dd2c32f58a1ae2727794e5";
         var APPid = "6c9cf9f3";
-        console.log("jobAPI -> userSearch222222222222", userSearch);
-        console.log("userLocation 2222222", userLocation)
+
 
         var queryURL = 'https://api.adzuna.com/v1/api/jobs/us/search/' + jobPage + '?app_id=6c9cf9f3&app_key=d06b0526f3dd2c32f58a1ae2727794e5' + '&what=' + userSearch + '&where=' + userLocation
 
         $.ajax({
             url: queryURL,
             method: 'GET',
-            success: function (response) {
-
-                console.log("JOB SEARCH API ************", response);
+            success: function(response) {
                 //clears any previous search
                 $("#jobTab").empty();
 
@@ -40,9 +37,8 @@ $(document).ready(function () {
                 var jobResults = response.results;
                 if (jobResults.length === 0) {
                     $("#jobTab").append('<div class="card-panel yellow lighten-1 noMatch"><h6>No Jobs Match </h6></div>')
-                   
-                }
-                else {
+
+                } else {
                     //populates each entry
                     for (var i = 0; i < jobResults.length; i++) {
                         var jobCard = $('<div class="card-panel">');
@@ -56,10 +52,10 @@ $(document).ready(function () {
                         jobCard.append('<h6>' + resultDate[0] + ' || ' + resultLoc[3] + ', ' + resultLoc[1]);
                         //comapny name
                         jobCard.append('<h6>' + jobResults[i].company.display_name)
-                        //description
+                            //description
                         jobCard.append('<p>' + jobResults[i].description);
                         //save button
-                        jobCard.append('<button id="saveJobs" class="btn waves-effect waves-light" type="submit">Save Job Listing<i class="material-icons right">archive</i></button>');
+                        jobCard.append('<button id="saveJobs" class="btn waves-effect waves-light saveBtn" type="submit">Save Job Listing<i class="material-icons right">archive</i></button>');
 
                         $("#jobTab").append(jobCard);
 
@@ -70,22 +66,21 @@ $(document).ready(function () {
                     $('#jobTab').append('<button id="jobPrevious">previous</button><button id="jobNext">next</button><span> page: ' + jobPage + ' </span>')
                 }
             },
-            error: function () {
-                console.log('error')
+            error: function() {
+
             }
         })
     }
+
     function showNews() {
         var url1 = 'https://newsapi.org/v2/everything?' + 'qInTitle=' + userSearch + '&sortBy=relevancy&language=en&pageSize=10&page=' + newsPage + '&apiKey=645a8c4dfc5044a0845c6033b3728a59';
 
-        $.get(url1, function (response) {
-            console.log("NEWS SEARCH API ****************", response);
+        $.get(url1, function(response) {
             $("#articleTab").empty();
             var newsResults = response.articles;
-            if (newsResults.length === 0 || userSearch===null) {
+            if (newsResults.length === 0 || userSearch === null) {
                 $("#articleTab").append('<div class="card-panel yellow lighten-1 noMatch"><h6>No Articles Match </h6></div>')
-            }
-            else {
+            } else {
                 for (let i = 0; i < newsResults.length; i++) {
                     var newsCard = $('<div class="card-panel">');
                     newsCard.append('<h5><a href = "' + newsResults[i].url + '" target="_blank">' + newsResults[i].title + '</a></h5>');
@@ -107,7 +102,7 @@ $(document).ready(function () {
                         newsCard.append('</br><p>' + newsContent[0]);
                     }
 
-                    newsCard.append('<button id="saveNews" class="btn waves-effect waves-light" type="submit">Save Article<i class="material-icons right">archive</i></button>');
+                    newsCard.append('<button id="saveNews" class="btn waves-effect waves-light saveBtn" type="submit">Save Article<i class="material-icons right">archive</i></button>');
 
                     $("#articleTab").append(newsCard);
                 }
@@ -127,76 +122,75 @@ $(document).ready(function () {
 
     // Save buttons
 
-    $('#jobTab').on('click', '#saveJobs', function () {
-        console.log(this.parentElement.innerHTML);
+    $('#jobTab').on('click', '#saveJobs', function() {
         jobArray.push(this.parentElement.innerHTML);
+        $(this).removeAttr("id")
+        $(this).html('Saved!' + '<i class="material-icons right">check</i>')
         localStorage.setItem('JOBS', JSON.stringify(jobArray));
 
     })
 
-    $('#articleTab').on('click', '#saveNews', function () {
-        console.log(this.parentElement.children[0].innerHTML);
+    $('#articleTab').on('click', '#saveNews', function() {
+            newsArray.push(this.parentElement.innerHTML);
+            $(this).removeAttr("id")
+            $(this).html('Saved!' + '<i class="material-icons right">check</i>')
+            localStorage.setItem('ARTICLES', JSON.stringify(newsArray));
 
-        newsArray.push(this.parentElement.innerHTML);
-        localStorage.setItem('ARTICLES', JSON.stringify(newsArray));
-
-    })
-    //////////////////////
+        })
+        //////////////////////
 
     // Toggle buttons
 
     // displays jobs on toggle
-    $('#jobButton').click(function () {
-        if (toggle === false) {
-            $('#articleTab').hide()
-            $('#jobTab').show()
-            toggle = true;
-        }
-    })
-    //displays articles on toggle
-    $('#articleButton').click(function () {
-        if (toggle === true) {
-            $('#jobTab').hide()
-            $('#articleTab').show()
-            toggle = false;
-        }
-    })
-    ///////////////////
+    $('#jobButton').click(function() {
+            if (toggle === false) {
+                $('#articleTab').hide()
+                $('#jobTab').show()
+                toggle = true;
+            }
+        })
+        //displays articles on toggle
+    $('#articleButton').click(function() {
+            if (toggle === true) {
+                $('#jobTab').hide()
+                $('#articleTab').show()
+                toggle = false;
+            }
+        })
+        ///////////////////
 
     //Page buttons
 
     //previous job page
-    $("#jobTab").on('click', '#jobPrevious', function () {
-        if (jobPage > 1) {
-            jobPage--;
-            console.log("jobPage", jobPage)
-            showJobs();
-        }
-    })
-    //next job page
-    $("#jobTab").on('click', '#jobNext', function () {
+    $("#jobTab").on('click', '#jobPrevious', function() {
+            if (jobPage > 1) {
+                jobPage--;
+                showJobs();
+            }
+        })
+        //next job page
+    $("#jobTab").on('click', '#jobNext', function() {
         if (jobPage < totalJobPages) {
             jobPage++;
-            console.log("jobAPI -> page", jobPage)
             showJobs();
 
         }
     })
-    $("#articleTab").on('click', '#newsPrevious', function () {
-        if (newsPage > 1) {
-            newsPage--;
-            showNews();
-        }
-    })
-    //next page
-    $("#articleTab").on('click', '#newsNext', function () {
-        if (newsPage < totalNewsPages) {
-            newsPage++;
-            showNews();
+    $("#articleTab").on('click', '#newsPrevious', function() {
+            if (newsPage > 1) {
+                newsPage--;
+                showNews();
+            }
+        })
+        //next page
+    $("#articleTab").on('click', '#newsNext', function() {
+            if (newsPage < totalNewsPages) {
+                newsPage++;
+                showNews();
 
-        }
-    })
-    //////////////////
+            }
+        })
+        //////////////////
 
     // JS media query for upsizing
 

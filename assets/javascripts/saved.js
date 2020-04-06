@@ -9,12 +9,14 @@ $(document).ready(function() {
         var jobsCard = $('<div class="card-panel">');
         jobsCard.append(jobsArray[i]);
         $("#jobTab").append(jobsCard);
+        $(".saveBtn").remove();
     }
 
     for (var l = 0; l < newsArray.length; l++) {
         var articleCard = $('<div class="card-panel">');
         articleCard.append(newsArray[l]);
         $("#articleTab").append(articleCard);
+        $(".saveBtn").remove();
     }
 
      // displays jobs on toggle

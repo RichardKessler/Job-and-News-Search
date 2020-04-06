@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    localStorage.clear();
     $('#landingButton').click(function(e) {
         e.preventDefault();
         var userSearch = $('#searchTermField').val();
