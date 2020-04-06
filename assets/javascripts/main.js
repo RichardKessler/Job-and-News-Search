@@ -124,14 +124,16 @@ $(document).ready(function() {
 
     $('#jobTab').on('click', '#saveJobs', function() {
         jobArray.push(this.parentElement.innerHTML);
-        $(this).html('Saved!' + '<i class="material-icons right">check</i>')
         $(this).removeAttr("id")
+        $(this).html('Saved!' + '<i class="material-icons right">check</i>')
         localStorage.setItem('JOBS', JSON.stringify(jobArray));
 
     })
 
     $('#articleTab').on('click', '#saveNews', function() {
             newsArray.push(this.parentElement.innerHTML);
+            $(this).removeAttr("id")
+            $(this).html('Saved!' + '<i class="material-icons right">check</i>')
             localStorage.setItem('ARTICLES', JSON.stringify(newsArray));
 
         })
