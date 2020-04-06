@@ -10,8 +10,9 @@ $(document).ready(function () {
 
     var toggle = true;
 
-    var jobArray = [];
-    var newsArray = [];
+    var jobArray = JSON.parse(localStorage.getItem('JOBS')) || [];
+
+    var newsArray = JSON.parse(localStorage.getItem('ARTICLES')) || [];
 
     var jobTitle = '';
 
@@ -109,7 +110,9 @@ $(document).ready(function () {
                 //calculating total number of pages
                 totalNewsPages = Math.ceil(response.totalResults / newsResults.length);
                 //adds next and previous page
-                $('#articleTab').append('<button id="newsPrevious">previous</button><button id="newsNext">next</button><span> page: ' + newsPage + ' </span>')
+                if (totalNewsPages > 1) {
+                    $('#articleTab').append('<button id="newsPrevious">previous</button><button id="newsNext">next</button><span> page: ' + newsPage + ' </span>')
+                }
             }
         })
     }
