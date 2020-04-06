@@ -55,7 +55,7 @@ $(document).ready(function() {
                             //description
                         jobCard.append('<p>' + jobResults[i].description);
                         //save button
-                        jobCard.append('<button id="saveJobs" class="btn waves-effect waves-light" type="submit">Save Job Listing<i class="material-icons right">archive</i></button>');
+                        jobCard.append('<button id="saveJobs" class="btn waves-effect waves-light saveBtn" type="submit">Save Job Listing<i class="material-icons right">archive</i></button>');
 
                         $("#jobTab").append(jobCard);
 
@@ -102,7 +102,7 @@ $(document).ready(function() {
                         newsCard.append('</br><p>' + newsContent[0]);
                     }
 
-                    newsCard.append('<button id="saveNews" class="btn waves-effect waves-light" type="submit">Save Article<i class="material-icons right">archive</i></button>');
+                    newsCard.append('<button id="saveNews" class="btn waves-effect waves-light saveBtn" type="submit">Save Article<i class="material-icons right">archive</i></button>');
 
                     $("#articleTab").append(newsCard);
                 }
@@ -124,6 +124,8 @@ $(document).ready(function() {
 
     $('#jobTab').on('click', '#saveJobs', function() {
         jobArray.push(this.parentElement.innerHTML);
+        $(this).html('Saved!' + '<i class="material-icons right">check</i>')
+        $(this).removeAttr("id")
         localStorage.setItem('JOBS', JSON.stringify(jobArray));
 
     })
