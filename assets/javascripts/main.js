@@ -39,7 +39,7 @@ $(document).ready(function () {
                 //setting results to a variable
                 var jobResults = response.results;
                 if (jobResults.length === 0) {
-                    $("#jobTab").append('<div class="card-panel yellow lighten-1"><h5>No Jobs Match </h5></div>')
+                    $("#jobTab").append('<div class="card-panel yellow lighten-1 noMatch"><h6>No Jobs Match </h6></div>')
                    
                 }
                 else {
@@ -83,7 +83,7 @@ $(document).ready(function () {
             $("#articleTab").empty();
             var newsResults = response.articles;
             if (newsResults.length === 0 || userSearch===null) {
-                $("#articleTab").append('<div class="card-panel yellow lighten-1"><h5>No Articles Match </h5></div>')
+                $("#articleTab").append('<div class="card-panel yellow lighten-1 noMatch"><h6>No Articles Match </h6></div>')
             }
             else {
                 for (let i = 0; i < newsResults.length; i++) {
