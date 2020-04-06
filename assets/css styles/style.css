@@ -1,27 +1,33 @@
 html {
-	background: rgb(0, 0, 0);
+	background: #023b69;
 	height: auto;
 }
+
 #mainWrapper {
 	background-color: #e7e7e7;
-	margin: 0 auto;
 	padding: 0;
 	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
 }
 
 .headerRow {
-	background-color: rgba(56, 14, 13, 1);
+	background-color: rgba(56, 14, 13, .8);
 	margin-bottom: 0;
+	padding: 0 2rem;
 }
 .nav-wrapper,
 .mainContentRow-2,
 .mainContentColumn-2-1 {
 	margin: 0;
 	padding: 0;
+	margin-bottom: 1rem;
+
 }
 
 .mainContentColumn-2-1 h5 {
 	color: #b10505;
+	margin-top: 1rem;
 }
 
 .tabRow,
@@ -29,7 +35,6 @@ html {
 	margin: 0 auto;
 	padding: 0;
 	margin-top: 1rem;
-	float: left;
 	text-align: center;
 }
 .tablink {
@@ -99,6 +104,9 @@ html {
 }
 .card-panel p {
 	margin-top: 1rem;
+}
+.noMatch {
+	color: red;
 }
 #saveJobs,
 #saveNews {
